@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +10,46 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<body style="background-color:rgb(142, 206, 228);">
-    <div class="row">
-        <button onclick="selectDifficulty()" id="difficulty" class="button" style="font-size: 64px;">Choose Game Difficulty</button>
-        <list style="margin-left: 25%; margin-right: 25%; margin-top: 10px;" id="difficultys"></list>
-        <div class="column">
-            <img id="rock" src="assets/rock.png" alt="Rock">
-            <img id="paper" src="assets/paper.png" alt="Paper">
-            <img id="scissors" src="assets/scissors.png" alt="Scissors">
+<body>
+    <section class="game">
+        <!--Display Score of player and computer -->
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+
+            </div>
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+
+            </div>
         </div>
-    </div>
+
+        <div class="move">Choose your move</div>
+
+        <!--Number of moves left before game ends -->
+        <div class="movesleft">Moves Left: 10 </div>
+
+        <!--Options available to player to play game -->
+        <div class="options">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissors</button>
+            <!-- <img src="assets/rock.png" class="rock"></img>
+            <img src="assets/paper.png" class="paper"></img>
+            <img src="assets/scissors.png" class="scissor"></img> -->
+        </div>
+
+        <!--Final result of game -->
+        <div class="result"></div>
+
+        <!--Reload the game -->
+        <button class="reload"></button>
+
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
