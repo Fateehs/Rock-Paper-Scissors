@@ -17,7 +17,7 @@ This project presents the rock paper scissors game we all know.
 * Replay button at the end of the game :green_circle:
 
 ## Demo
-![](https://github.com/Fateehs/Rock-Paper-Scissors/blob/main/assets/RPS.gif)
+![](https://github.com/Fateehs/Rock-Paper-Scissors/blob/main/assets/rockpaperscissors.gif)
 
 
 #### ATTENTION
